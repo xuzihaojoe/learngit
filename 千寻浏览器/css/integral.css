@@ -1,0 +1,218 @@
+/*
+* @Author: joe
+* @Date:   2017-12-30 16:56:56
+* @Last Modified by:   joe
+* @Last Modified time: 2018-01-23 17:04:49
+*/
+body{
+	font-size:12px;
+	background:#f6f8fa;
+	min-width: 940px;
+	padding-bottom: 69px;
+}
+header{
+	height: 70px;
+	margin-bottom: 10px;
+	box-shadow: 0px 4px 6px 0px #bdbec0;
+	background:white;
+}
+header div{
+	width: 940px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+header div h1{
+	height:33px;
+	width:242px;
+	background: url('../images/sprite.png') no-repeat -27px 0px;
+	float: left;
+	margin-top: 17px;
+	margin-right: 42px;
+}
+header ul{
+	float: left;
+}
+header ul li{
+	float: left;
+	height:70px;
+	line-height: 70px;
+	color: #425766;
+	font-weight: bold;
+	width:120px;
+	text-align: center;
+	box-sizing: border-box;
+}
+header ul li:nth-of-type(1){
+	border-bottom: 2px solid red;
+}
+header ul li:nth-of-type(1)>a{
+	color:red;
+}
+header ul li a{
+	color: #425766;
+	text-decoration: none;
+}
+.banner{
+	width:940px;
+	margin:0px auto;
+	height:218px;
+}
+.banner .bleft{
+	width: 180px;
+	height: 218px;
+	text-align:center;
+	background:white;
+	box-shadow:0px 0px 11px 4px #bdbec0;
+	margin-right: 13px;
+	float:left;
+}
+.banner .bleft .login{
+	width: 140px;
+	height:60px;
+	line-height: 40px;
+	display:inline-block;
+	font-size:16px;
+	font-weight: bold;
+	margin:68px auto 15px;
+	border-radius: 5%;
+	color:white;
+	background:url(../images/sprite.png) no-repeat -121px -1493px;
+}
+.banner .bleft p{
+	color:#8596a2;
+}
+.banner .bleft .onep{
+	margin-bottom:9px;
+}
+.banner .bleft p span{
+	color:red;
+}
+.banner .bright{
+	width:747px;
+	height:218px;
+	float:left;
+	  overflow:hidden;  
+	 position:relative;
+
+}
+.banner .bright ul{
+	width:8888px;
+	height:218px;
+	background:pink;
+	position:relative;
+}
+.banner .bright ul li{
+	width:747px;
+	height: 218px;
+	float:left;
+}
+.brl{
+	width:33px;
+	height:64px;
+	display:inline-block;
+	background:url("../images/sprite.png") no-repeat -236px -1868px;
+	position:absolute;
+	left:0px;
+	top: 50%;
+	margin-top:-32px;
+	z-index:20;
+}
+.brr{
+	width:33px;
+	height:64px;
+	display:inline-block;
+	background:url("../images/sprite.png") no-repeat -236px -1934px;
+	position:absolute;
+	right:0px;
+	top: 50%;
+	margin-top:-32px;
+	z-index:20;
+}
+
+.box{
+	width:940px;
+	margin:10px auto 0px;
+	box-shadow:0px 0px 6px 3px #bdbec0;
+	overflow:hidden;
+	position:relative;
+	background:white;
+}
+.oneleft{
+	width:430px;
+	height: 340px;
+	float:left;
+}
+.one .oneleft .new{
+	width: 39px;
+	height: 39px;
+	display:inline-block;
+	background:url('../images/new.png');
+}
+.two .oneleft .new,.three .oneleft .new,.four .oneleft .new{
+	background:white;
+}
+.one .oneleft p{
+    margin:19px 0px 36px 67px;
+	padding-left: 40px;
+	font-size:19px;
+	font-weight:bold;
+	background:url('../images/pptv.png') no-repeat -10px center;
+	line-height:27px;
+}
+.two .oneleft p{
+	background:url('../images/iqy.png') no-repeat -5px center;
+}
+.three .oneleft p{
+	background:url('../images/bdc.png') no-repeat -4px center;
+}
+.four .oneleft p{
+	background:url('../images/txt.png') no-repeat -7px center;
+}
+.one .oneleft img{
+	margin-left: 67px;
+}
+.two .oneleft img{
+	margin-left: 158px;
+}
+.one .center{
+	width:1px;
+	height: 276px;
+	background:#e2e5e9;
+	margin-top:50px;
+	float:left;
+}
+.one .oneright{
+	height:340px;
+	width:509px;
+	float:left;
+}
+.one .oneright .txt{
+	position: absolute;
+	right: 19px;
+	top:10px;
+	font-size:12px;
+	color:#8596a2;
+}
+.one .oneright div{
+	margin:60px 0px 0px 20px;
+	background:url('../images/prize.png') no-repeat left -10px;
+	width: 210px;
+	height: 260px;
+	float:left;
+	position:relative;
+	box-sizing:border-box;
+	text-align:center;
+}
+.one .oneright div:nth-of-type(2){
+	margin-left:10px;
+}
+.one .oneright div p{
+	position:absolute;
+	left:8px;
+	bottom: 53px;
+}
+.one .oneright div .big{
+	font-size:28px;
+	font-weight:1000;
+	color:#425766;
+}

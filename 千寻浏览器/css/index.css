@@ -1,0 +1,596 @@
+/*
+* @Author: joe
+* @Date:   2018-01-17 11:24:55
+* @Last Modified by:   joe
+* @Last Modified time: 2018-01-23 16:59:54
+*/
+html{
+	height: 100%;
+	width: 100%;
+}
+body{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+/* header>h1{
+	float:left;
+	
+}
+header>img{
+	float:right;
+	width:41px;
+} */
+.title{
+	position:fixed;
+	left:40px;
+	top: 20px;
+	width:124px;
+	height:26px;
+	z-index: 2;
+}
+.music{
+	width:41px;
+	position:fixed;
+	right:20px;
+	top: 20px;
+	z-index:2;
+	cursor: pointer;
+}
+.rotate{
+		animation: mmusic 5s infinite linear;
+}
+@keyframes mmusic{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+section{
+	height: 100%;
+	width: 100%;
+	position:relative;
+}
+section>div{
+	height: 100%;
+	width: 100%;
+	position:relative;
+}
+.screen1{
+	background: url("../images/bg01.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.screen1 .cloud{
+	position:absolute;
+	width:140px;
+	left:80%;
+	bottom:520px;
+	animation: mcloud 300s infinite linear;
+}
+.screen1 .scloud{
+	position:absolute;
+	width:126px;
+	left:70%;
+	bottom:410px;
+	animation: mcloud 300s infinite linear;
+}
+.screen1 .balloon{
+	position:absolute;
+	width:118px;
+	left:50%;
+	bottom:420px;
+	margin-left:-59px;
+	opacity: 0.9;
+	animation:mballoon 10s infinite linear;
+}
+@keyframes mcloud{
+	0%{
+		transform:translate(0px,0px);
+	}
+	50%{
+		transform:translate(-1700px,0px);
+	}
+	100%{
+		transform:translate(0px,0px);
+	}
+}
+@keyframes mballoon{
+	0%{
+		transform:translate(0px,0px);
+	}
+	50%{
+		transform:translate(0px,30px);
+	}
+	100%{
+		transform:translate(0px,0px);
+	}
+}
+.pictitle{
+	position:absolute;
+	width:370px;
+	bottom:282px;
+	left:50%;
+	margin-left:-185px;
+	text-align:center;
+
+}
+ .pictitle span{
+	transition:all 2s;
+}
+ .pictitle span:nth-of-type(1){
+	width:136px;
+	background:pink;
+	display:inline-block;
+	background:url("../images/logo-text.png") no-repeat 10px -13px ;
+}
+.pictitle span:nth-of-type(2){
+	display:inline-block;
+	overflow:hidden; 
+}
+ .all .pictitle .logomove{
+	transform:translate(550px,0px);
+}
+.all .pictitle .title1move{
+	transform:translate(-550px,0px) rotate(180deg);
+	
+}
+.pictitle .logo{
+	height:52px;
+	float:left;
+}
+
+ .pictitle .title1{
+	height:51px;
+}
+ .de{
+	/* position:absolute;
+	left:50%;
+	bottom:275px;
+	margin-left:-168px; */
+	width:320px;
+	font-size:12px;
+	color:white;
+	text-align:center;
+	line-height:18px;
+	display:inline-block;
+	margin-top:5px;
+}
+.all .node{
+	transform:scale(0);
+}
+.screen2{
+	background: url("../images/bg02.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.screen2 .fire-balloon{
+	position: absolute;
+    right: 24%;
+    top: 55px;
+    width: 30px;
+    animation:mfire-balloon 15s infinite linear;
+}
+.screen2 .compass{
+	width:122px;
+	height: 137px;
+	position:absolute;
+	background:url("../images/compass.png") no-repeat;
+	background-size:cover;
+	bottom: 416px;
+	left:50%;
+	margin-left:-61px;
+}
+.screen2 .compass>img{
+	 position: relative;
+    top: 15px;
+    left: 50%;
+    margin-left: -46px;
+    width: 92px;
+    animation:mcompass 3s infinite linear;
+}
+@keyframes mfire-balloon{
+	0%{
+		transform:translate(0px,0px);
+	}
+	50%{
+		transform:translate(0px,50px);
+	}
+	100%{
+		transform:translate(0px,0px);
+	}
+}
+@keyframes mcompass{
+	0%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(360deg);
+	}
+}
+.screen3{
+	background: url("../images/bg03.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.screen3 .conch{
+	position:absolute;
+	left:50%;
+	margin-left:-69px;
+	bottom:460px;
+	width:108px;
+	animation:mconch 10s infinite linear;
+}
+.screen3 .pao{
+	position:absolute;
+	left:50%;
+	bottom:440px;
+	animation:mpao 13s infinite linear;
+}
+.screen3 .p{
+	left:46%;
+	bottom:427px;
+	animation:mpao 8s infinite linear;
+}
+.screen3 .p1{
+	left:50%;
+	bottom:435px
+	animation:mpao 10s infinite linear;
+}
+.screen3 .p2{
+	left:48%;
+	bottom:420px;
+	animation:mpao 11s infinite linear;
+}
+.screen3 .p3{
+	left:47%;
+	bottom:425px;
+	animation:mpao 12s infinite linear;
+}
+.screen3 .p4{
+	left:48%;
+	bottom:430px;
+	animation:mpao 7s infinite linear;
+}
+.screen3 .p5{
+	left:49%;
+	bottom:435px;
+	animation:mpao 7s infinite linear;
+}
+.screen3 .p6{
+	left:50%;
+	bottom:422px;
+	animation:mpao 6s infinite linear;
+}
+.screen3 .p7{
+	left:51%;
+	bottom:433px;
+	animation:mpao 7s infinite linear;
+}
+.screen3 .p8{
+	left:52%;
+	bottom:422px;
+	animation:mpao 9s infinite linear;
+}
+.screen3 .p9{
+	left:53%;
+	bottom:430px;
+	animation:mpao 10s infinite linear;
+}
+.screen3 .p10{
+	left:49%;
+	bottom:434px;
+	animation:mpao 11s infinite linear;
+}
+.screen3 .p11{
+	left:51%;
+	bottom:426px;
+	animation:mpao 9s infinite linear;
+}
+@keyframes mconch{
+	0%{
+		transform:translate(0px,0px);
+	}
+	50%{
+		transform:translate(0px,30px);
+	}
+	100%{
+		transform:translate(0px,0px);
+	}
+}
+@keyframes mpao{
+	0%{
+		// transfrom:scale(0);
+		transform:translate(0px,0px);
+	}
+	100%{
+		transform:translate(0px,-300px);
+	}
+}
+.screen4{
+	background: url("../images/bg04.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+.screen4 .ballon04{
+	width:140px;
+	position:absolute;
+	left:50%;
+	margin-left:-70px;
+	bottom:370px;
+	transition: all 6s;
+}
+.screen4 .ballon04>img{
+	width:140px;
+	animation:mballoon04 10s infinite linear;
+}
+.screen4 .ballon04:hover{
+	transform:translate(-400px,-400px);
+}
+@keyframes mballoon04{
+	0%{
+		transform:rotate(0deg) translate(0px,0px);
+	}
+	25%{
+		transform:rotate(-10deg) translate(-20px,0px);
+	}
+	50%{
+		transform:rotate(0deg) translate(0px,0px);
+	}
+	75%{
+		transform:rotate(10deg) translate(20px,0px);
+	}
+	100%{
+		transform:rotate(0deg) translate(0px,0px);
+	}
+}
+.screen5{
+	background: url("../images/bg05.jpg") no-repeat;
+	background-size: 100% 100%;
+	overflow:hidden;
+}
+.screen5 .pic02{
+	position:absolute;
+	width:118px;
+	left:50%;
+	margin-left:-59px;
+	bottom:416px;
+	animation:pic02 2s infinite linear;
+}
+.screen5 .fire2{
+	position:absolute;
+	width:56px;
+	right:100px;
+	bottom:273px;
+	animation:mfire2 7s infinite linear;
+}
+.screen5 .fire3{
+	position:absolute;
+	width:81px;
+	right:218px;
+	bottom:104px;
+	animation:mfire2 8s infinite linear;
+}
+@keyframes mfire2{
+	0%{
+		transform:translate(0px,0px);
+	}
+	50%{
+		transform:translate(0px,-50px)
+	}
+	100%{
+		transform:translate(0px,0px);
+	}
+}
+@keyframes pic02{
+	0%{
+		transform:scale(1);
+	}
+	100%{
+		transform:scale(6);
+	}
+}
+.screen6{
+	background: url("../images/bg06.jpg") no-repeat;
+	background-size: 100% 100%;
+	overflow:hidden;
+}
+.screen6 .star{
+	animation:mstar 30s infinite linear;
+}
+.screen6 .aircraft{
+	position:absolute;
+	width:108px;
+	left:50%;
+	margin-left:-54px;
+	bottom:309px;
+	animation:mair 10s infinite linear;
+}
+@keyframes mstar{
+	0%{
+		transform:translate(0px,-1500px);
+	}
+	100%{
+		transform:translate(0px,0px);
+	}
+}
+@keyframes mair{
+	0%{
+		transform:translate(0px,0px);
+	}
+	50%{
+		transform:translate(0px,30px);
+	}
+	100%{
+		transform:translate(0px,0px);
+	}
+}
+.screen7{
+	background: url("../images/bg07.jpg") no-repeat;
+	background-size: 100% 100%;
+	overflow:hidden;
+}	
+.screen7 .black-hole{
+	position:absolute;
+	width: 180px;
+	left:50%;
+	margin-left:-90px;
+	bottom:388px;
+	background:url("../images/black-hole.png") no-repeat 0px 0px transparent;
+	background-size:cover;
+	animation:mblack-hole 5s infinite linear;
+	z-index:999;
+}
+.lt{
+	position:absolute;
+	left:-32px;
+	top:-32px;
+	animation:mlt 4s infinite linear;
+}
+.lb{
+	position:absolute;
+	left:-32px;
+	bottom:-32px;
+	animation:mlb 3s infinite linear;
+}
+.rt{
+	position:absolute;
+	right:-32px;
+	top: -32px;
+	animation:mrt 3s infinite linear;
+}
+.rb{
+	position:absolute;
+	right:-32px;
+	bottom:-32px;
+	animation:mrb 4s infinite linear;
+}
+@keyframes mblack-hole{
+	0%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(360deg);
+	}
+}
+@keyframes mlt{
+	0%{
+		transform:translate(0px,0px);
+	}
+	100%{
+		transform:translate(640px,160px);
+	}
+}
+@keyframes mlb{
+	0%{
+		transform:translate(0px,0px);
+	}
+	100%{
+		transform:translate(640px,-452px);
+	}
+}
+ @keyframes mrt{
+	0%{
+		transform:translate(0px,0px);
+	}
+	100%{
+		transform:translate(-640px,160px);
+	}
+}
+@keyframes mrb{
+	0%{
+		transform:translate(0px,0px);
+	}
+	100%{
+		transform:translate(-640px,-452px);
+	}
+} 
+ol{
+	position: fixed;
+	right: 25px;
+	top: 50%;
+	margin-top: -107px;
+}
+ol>li{
+	width: 20px;
+	height: 20px;
+	border: 1px solid #f60;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+ol>li.color{
+ 	background: url("../images/side_bg.png") no-repeat center center;
+    background-size: 34px;
+    border: none;
+    width: 36px;
+    position: relative;
+    height: 36px;
+    left: -7px;	
+    animation:mcolor 3s infinite linear;
+}
+@keyframes mcolor{
+	0%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(360deg);
+	}
+}
+
+.download{
+	position:fixed;
+	left:50%;
+	bottom:140px;
+	margin-left: -150px;
+	font-size: 12px;
+	color:white;
+	font-weight: bold;
+	text-align:center;
+	cursor:pointer;
+}
+.download>img{
+	width:300px;
+	display: block;
+	margin-bottom:12px;	
+}
+footer{
+	width:100%;
+	height:60px;
+	position:fixed;
+	bottom: 0px;
+	left:0px;
+	background:rgba(0,0,0,0.6);
+	line-height: 60px;
+	color:#b1b1b1;
+	font-size: 15px;
+}
+footer ul{
+	width:1000px;
+	margin: 0px auto;
+}
+footer li{
+	float: left;
+	width:20%;
+	text-align: center;
+	transition:all 1s;
+	cursor:pointer;
+}
+footer li a{
+	color:#b1b1b1;
+	text-decoration:none;
+}
+
+footer li:nth-of-type(1):hover{
+	background:#228bd6;
+}
+footer li:nth-of-type(2):hover{
+	background:#cc3333;
+}
+footer li:nth-of-type(3):hover{
+	background:#3aa624;
+}
+footer li:nth-of-type(4):hover{
+	background:#c145cc;
+}
+footer li:nth-of-type(5):hover{
+	background:#e8c101;
+}

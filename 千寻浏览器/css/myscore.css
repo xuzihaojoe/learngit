@@ -1,0 +1,281 @@
+	/*
+* @Author: joe
+* @Date:   2017-12-31 12:29:34
+* @Last Modified by:   joe
+* @Last Modified time: 2018-01-26 10:49:21
+*/
+body{
+	font-size:12px;
+	background:#f6f8fa;
+	min-width: 940px;
+	padding-bottom: 80px;
+	color:#425766;
+}
+header{
+	height: 70px;
+	margin-bottom: 10px;
+	box-shadow: 0px 4px 6px 0px #bdbec0;
+	background:white;
+}
+header div{
+	width: 940px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+header div h1{
+	height:33px;
+	width:242px;
+	background: url('../images/sprite.png') no-repeat -27px 0px;
+	float: left;
+	margin-top: 17px;
+	margin-right: 42px;
+}
+header ul{
+	float: left;
+}
+header ul li{
+	float: left;
+	height:70px;
+	line-height: 70px;
+	color: #425766;
+	font-weight: bold;
+	width:120px;
+	text-align: center;
+	box-sizing: border-box;
+}
+header ul li:nth-of-type(2){
+	border-bottom: 2px solid red;
+}
+header ul li:nth-of-type(2)>a{
+	color:red;
+}
+header ul li a{
+	color: #425766;
+	text-decoration: none;
+}
+.banner{
+	width:940px;
+	margin:0px auto;
+	height:218px;
+}
+.banner .bleft{
+	width: 180px;
+	height: 218px;
+	text-align:center;
+	background:white;
+	box-shadow:0px 0px 11px 4px #bdbec0;
+	margin-right: 13px;
+	float:left;
+}
+.banner .bleft .login{
+	width: 140px;
+	height:60px;
+	line-height: 40px;
+	display:inline-block;
+	font-size:16px;
+	font-weight: bold;
+	margin:68px auto 14px;
+	border-radius: 5%;
+	color:white;
+	background:url(../images/sprite.png) no-repeat -121px -1638px;
+}
+.banner .bleft p{
+	color:#8596a2;
+}
+
+.banner .bleft p span{
+	color:red;
+}
+.banner .bright{
+	width:747px;
+	height:218px;
+	float:left;
+	  overflow:hidden;  
+	 position:relative;
+
+}
+.banner .bright ul{
+	width:8888px;
+	height:218px;
+	background:pink;
+	position:relative;
+}
+.banner .bright ul li{
+	width:747px;
+	height: 218px;
+	float:left;
+}
+.brl{
+	width:33px;
+	height:64px;
+	display:inline-block;
+	background:url("../images/sprite.png") no-repeat -236px -1868px;
+	position:absolute;
+	left:0px;
+	top: 50%;
+	margin-top:-32px;
+	z-index:20;
+}
+.brr{
+	width:33px;
+	height:64px;
+	display:inline-block;
+	background:url("../images/sprite.png") no-repeat -236px -1934px;
+	position:absolute;
+	right:0px;
+	top: 50%;
+	margin-top:-32px;
+	z-index:20;
+}
+
+.main{
+	width:940px;
+	height:320px;
+    margin:0px auto;
+	background:white;
+}
+.one{
+    margin:10px auto 20px;	
+    overflow:hidden;
+}
+.one .top{
+	margin-top:34px;
+	margin-bottom:32px;
+	width:700px;
+	height:22px;	
+}
+.one .top .icon{
+	width: 17px;
+	height: 17px;
+	margin:2px 10px 0px 33px;
+	font-size:14px;
+	background:url(../images/sprite1.png) no-repeat -253px -2117px ;
+	float:left;
+}
+.one .top .text{
+	height:22px;
+	width:98px;
+	line-height:22px;
+	font-size:14px;
+	float:left;
+	margin-right: 12px;
+}
+.one .top .numberone{
+	height:22px;
+	width: 11px;
+	background:url('../images/one.png');
+	float:left;
+}
+.one .top .numbertwo{
+	height:22px;
+	width: 11px;
+	background:url('../images/four.png');
+	float:left;
+}
+.one ul{
+	width: 772px;
+	margin:0px auto;
+	height: 176px;
+}
+.one ul li{
+	width:185px;
+	margin-right:98px;
+	float:left;
+	background:url('../images/circle.png') no-repeat -8px 0px ;
+	text-align:center;
+	position: relative;
+}
+.one ul li:nth-of-type(3){
+	margin-right:0px;
+}
+.one ul li span{
+	display:inline-block;
+}
+.one ul li span:nth-of-type(1){
+	margin-top:60px;
+}
+.one ul li .number{
+	text-decoration: none;
+	font-weight:1000;
+	font-size:32px;
+}
+.one ul li .txt{
+	font-style: normal;
+	font-size:18px;
+}
+ .one ul li span:nth-of-type(2){
+	margin-top:42px;
+} 
+ .one ul li span:nth-of-type(4){
+ 	z-index: 9999;
+ 	position:absolute;
+ 	top:-7px;
+ 	right: -9px;
+ 	width:20px;
+ 	height:20px;
+ 	background:url(../images/sprite1.png) no-repeat -250px -2136px ;
+
+ }
+ .two{
+ 	padding: 34px 0px 0px 33px;
+ 	box-sizing:border-box;
+ }
+ .two span{
+ 	float:left;
+ 	width: 16px;
+ 	height: 16px;
+ 	background:url(../images/sprite1.png) no-repeat right bottom;
+ 	margin-right:10px;
+ }
+ .two p{
+ 	float:left;
+ 	margin-right:15px;
+ 	height:16px;
+ 	line-height:16px;
+ 	font-size:16px;
+ }
+ .two ul{
+ 	overflow:hidden;
+ }
+ .two ul li{
+ 	width:88px;
+ 	height: 26px;
+ 	float:left;
+ 	text-align:center;
+ }
+ .two ul li a{
+ 	color:#425766;
+	text-decoration:none;
+ }
+
+ .style{
+ 	border-bottom::;px solid #88b7ee;
+ 	font-weight:bold;
+ }
+  .style>a{
+ 	color:#88b7ee !important;
+ }
+ .two .line{
+ 	margin-top:182px;
+ 	float:left;
+ 	width:65px;
+ 	height:38px;
+ 	text-align:center;
+ 	line-height: 38px;
+ 	border-top: 1px solid #e5e8ec;
+	position:relative;
+ }
+ .two .first{
+ 	width:32px;
+ }
+ .two .line:nth-of-type(1){
+ 	 	margin-left: 87px;
+ }
+ .two .line .spot{
+ 	width: 3px;
+ 	height: 3px;
+ 	background:#7bafec;
+ 	position:absolute;
+ 	top:-4px;
+ 	left:31px;
+ }

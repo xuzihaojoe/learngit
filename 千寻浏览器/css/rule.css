@@ -1,0 +1,107 @@
+/*
+* @Author: joe
+* @Date:   2017-12-29 22:25:53
+* @Last Modified by:   joe
+* @Last Modified time: 2018-01-23 17:04:38
+*/
+body{
+	font-size:12px;
+	background:#f6f8fa;
+	min-width: 940px;
+	padding-bottom: 43px;
+}
+header{
+	height: 70px;
+	margin-bottom: 45px;
+	box-shadow: 0px 4px 6px 0px #bdbec0;
+	background:white;
+}
+header div{
+	width: 940px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+header div h1{
+	height:33px;
+	width:242px;
+	background: url('../images/sprite.png') no-repeat -27px 0px;
+	float: left;
+	margin-top: 17px;
+	margin-right: 42px;
+}
+header ul{
+	float: left;
+}
+header ul li{
+	float: left;
+	height:70px;
+	line-height: 70px;
+	color: #425766;
+	font-weight: bold;
+	width:120px;
+	text-align: center;
+	box-sizing: border-box;
+}
+header ul li:nth-of-type(3){
+	border-bottom: 2px solid red;
+}
+header ul li:nth-of-type(3)>a{
+	color:red;
+}
+header ul li a{
+	color: #425766;
+	text-decoration: none;
+}
+.text{
+	margin:0px auto;
+	width: 940px;
+}
+.text dl{
+	margin-bottom:45px;
+}
+.text dl dt{
+	font-weight:bold;
+	font-size:16px;
+	margin-bottom:14px;
+}
+.one{
+	width:940px;
+	text-align:center;
+	margin:42px auto;
+}
+.two{
+	width:940px;
+	margin:43px auto;
+}
+.tableone{
+	width:940px;
+}
+.tabletwo{
+	width:468px;
+	text-align:center;
+}
+
+.tableone tr,.tabletwo tr{
+	height:53px;
+	border: 1px solid #d6dbe2;
+	background:#eff3f6;
+}
+.tableone tr:nth-of-type(1),.tabletwo tr:nth-of-type(1){
+	font-size:16px;
+	font-weight:bold;
+	background:#e4e7eb;
+}
+.two span{
+	font-size:16px;
+	font-weight:bold;
+	display: inline-block;
+	margin-bottom:10px;
+}
+footer{
+	width:940px;
+	margin:0px auto;
+}
+footer p{
+	color:#aaabab;
+}
+
